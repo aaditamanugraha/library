@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p>hello world!</p>
-    <button id="test" onclick="testCode()">test</button>
+    <nav>
+      <h1>Book Library</h1>
+      <p>by Adhitya Aditama Nugraha</p>
+    </nav>
+
+    <main>
+      <div class="book-input">
+        <h2>Input Book Items</h2>
+        <form action="#" class="book-input-details">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" />
+
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" />
+
+          <label for="pages">Pages</label>
+          <input type="number" id="pages" name="pages" />
+        </form>
+      </div>
+    </main>
 
     <script src="./script.js"></script>
   </body>

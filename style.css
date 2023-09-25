@@ -1,3 +1,15 @@
-p {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --bg-main: white;
+  --bg-secondary: rgb(217, 217, 217);
+  --font-main: #141e46;
+  --font-second: #c70039;
+  --font-third: #ff6969;
+  --font-shades: #fff5e0;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  font-family: 'Roboto', sans-serif;
 }
