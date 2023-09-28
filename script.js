@@ -60,7 +60,7 @@ function addBookToLibrary() {
   }
 
   // menambahkan nilai input ke dalam array
-  let newBook = new Book(inputAuthor, inputTitle, inputPages);
+  let newBook = new Book(inputTitle, inputAuthor, inputPages);
 
   // menambahkan newBook ke dalam array myLibrary
   myLibrary.push(newBook);
