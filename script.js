@@ -24,4 +24,31 @@ function addBookToLibrary() {
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
   document.getElementById("pages").value = "";
+
+  showBookList();
+}
+
+function showBookList() {
+  let containerBookList = document.getElementById("library");
+  containerBookList.innerHTML = "";
+
+  for (let i = 0; i < myLibrary.length; i++) {
+    const book = myLibrary[i];
+
+    // judul buku
+    let titleElement = document.createElement("h3");
+    titleElement.textContent = book.title;
+
+    // penulis dan pages
+    let authorElement = document.createElement("p");
+    authorElement.textContent = "Author: " + book.author;
+
+    let pagesElement = document.createElement("P");
+    pagesElement.textContent = book.pages + " pages.";
+
+    // menambahkan element yang sudah dibuat ke dalam HTML
+    containerBookList.appendChild(titleElement);
+    containerBookList.appendChild(authorElement);
+    containerBookList.appendChild(pagesElement);
+  }
 }
