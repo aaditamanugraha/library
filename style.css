@@ -44,3 +44,15 @@ main > .book-input > .book-input-details > .input-card {
 main > .book-list {
   margin-top: 48px;
 }
+
+main > .book-list > #library > .book-container {
+  margin-bottom: 16px;
+}
+
+main > .book-list > #library > .book-container > h3 {
+  margin: 0 0 8px 0;
+}
+
+main > .book-list > #library > .book-container > p {
+  margin: 0;
+}

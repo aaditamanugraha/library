@@ -15,6 +15,10 @@ function showBookList() {
   for (let i = 0; i < myLibrary.length; i++) {
     const book = myLibrary[i];
 
+    // buku container
+    let divElement = document.createElement("div");
+    divElement.classList.add("book-container");
+
     // judul buku
     let titleElement = document.createElement("h3");
     titleElement.textContent = book.title;
@@ -24,12 +28,15 @@ function showBookList() {
     authorElement.textContent = "Author: " + book.author;
 
     let pagesElement = document.createElement("P");
-    pagesElement.textContent = book.pages + " pages.";
+    pagesElement.textContent = book.pages + " pages";
 
     // menambahkan element yang sudah dibuat ke dalam HTML
-    containerBookList.appendChild(titleElement);
-    containerBookList.appendChild(authorElement);
-    containerBookList.appendChild(pagesElement);
+    divElement.appendChild(titleElement);
+    divElement.appendChild(authorElement);
+    divElement.appendChild(pagesElement);
+
+    // menambahkan book-container ke dalam container
+    containerBookList.appendChild(divElement);
   }
 }
 
