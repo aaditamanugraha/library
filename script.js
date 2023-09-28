@@ -1,5 +1,5 @@
 // array penyimpanan buku
-const myLibrary = [];
+let myLibrary = [];
 
 // object constructor untuk input buku
 function Book(title, author, pages) {
@@ -33,6 +33,20 @@ function showBookList() {
   }
 }
 
+function saveDataToLocalStorage() {
+  localStorage.setItem("myLibrary", JSON.stringify(myLibrary));
+}
+
+function loadDataFromLocalStorage() {
+  let data = localStorage.getItem("myLibrary");
+  if (data) {
+    myLibrary = JSON.parse(data);
+    showBookList();
+  }
+}
+
+window.onload = loadDataFromLocalStorage();
+
 function addBookToLibrary() {
   // mengambil informasi dari user input
   let inputTitle = document.getElementById("title").value;
@@ -55,6 +69,8 @@ function addBookToLibrary() {
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
   document.getElementById("pages").value = "";
+
+  saveDataToLocalStorage();
 
   showBookList();
 }
