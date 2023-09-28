@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --bg-main: white;
@@ -9,7 +9,58 @@
   --font-shades: #fff5e0;
 }
 
+/* SECTION - body */
+
 body {
   background-color: var(--bg-secondary);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
 }
+
+/* !SECTION */
+
+/* SECTION - nav */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav > h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+nav > p {
+  margin: 0;
+}
+
+/* !SECTION */
+
+/* SECTION - main */
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* SECTION - .book-input */
+
+main > .book-input > .book-input-details > .input-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+/* !SECTION */
+
+/* SECTION - .book-list */
+
+main > .book-list {
+  margin-top: 48px;
+}
+
+/* !SECTION */
+
+/* !SECTION */
