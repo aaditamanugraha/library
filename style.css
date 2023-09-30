@@ -3,6 +3,7 @@
 :root {
   --bg-main: white;
   --bg-secondary: rgb(217, 217, 217);
+  --bg-third: rgb(242, 242, 242);
   --font-main: #141e46;
   --font-second: #c70039;
   --font-third: #ff6969;
@@ -32,7 +33,7 @@ nav > p {
 }
 
 main {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -55,10 +56,19 @@ main > .book-input > .book-input-details > .input-card {
 
 main > .book-list {
   margin-top: 48px;
+  background-color: var(--bg-main);
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 32px;
+}
+
+main > .book-list > h2 {
+  margin-top: 0;
 }
 
 main > .book-list > #library > .book-container {
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 main > .book-list > #library > .book-container > h3 {
