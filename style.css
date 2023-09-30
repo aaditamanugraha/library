@@ -5,6 +5,7 @@
   --bg-secondary: rgb(217, 217, 217);
   --bg-third: rgb(242, 242, 242);
   --font-main: #141e46;
+  --font-main-second: #1c2a60;
   --font-second: #c70039;
   --font-third: #ff6969;
   --font-shades: #fff5e0;
@@ -55,11 +56,25 @@ main > .book-input > .book-input-details > .input-card {
 }
 
 main > .book-input > .book-input-details > .input-card > input {
-    border: 1px solid black;
-    height: 24px;
-    border-radius: 4px;
-    padding-left: 8px;
-  }
+  border: 1px solid black;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+}
+
+main > .book-input > .book-input-details > #button {
+  background-color: var(--font-main);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: var(--bg-main);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+main > .book-input > .book-input-details > #button:hover {
+  cursor: pointer;
+  background-color: var(--font-main-second);
+}
 
 main > .book-list {
   margin-top: 48px;
