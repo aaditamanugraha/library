@@ -30,10 +30,19 @@ function showBookList() {
     let pagesElement = document.createElement("P");
     pagesElement.textContent = book.pages + " pages";
 
+    // tombol delete
+    let deleteBookButton = document.createElement("button");
+    deleteBookButton.classList.add("delete-button");
+    deleteBookButton.textContent = "Delete";
+    deleteBookButton.onclick = function () {
+      deleteBook(i);
+    };
+
     // menambahkan element yang sudah dibuat ke dalam HTML
     divElement.appendChild(titleElement);
     divElement.appendChild(authorElement);
     divElement.appendChild(pagesElement);
+    divElement.appendChild(deleteBookButton);
 
     // menambahkan book-container ke dalam container
     containerBookList.appendChild(divElement);
@@ -80,4 +89,13 @@ function addBookToLibrary() {
   saveDataToLocalStorage();
 
   showBookList();
+}
+
+// menghapus buku
+function deleteBook(index) {
+  if (confirm("Are you sure want to delete this book?")) {
+    myLibrary.splice(index, 1);
+    saveDataToLocalStorage();
+    showBookList();
+  }
 }
