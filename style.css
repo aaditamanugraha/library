@@ -92,6 +92,10 @@ main > .book-list > h2 {
 
 main > .book-list > #library > .book-container {
   margin-top: 16px;
+  background-color: var(--bg-third);
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 main > .book-list > #library > .book-container > h3 {
