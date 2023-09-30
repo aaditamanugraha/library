@@ -19,6 +19,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 nav > h1 {
@@ -33,6 +34,17 @@ nav > p {
 main {
   width: 80%;
   margin: 0 auto;
+}
+
+main > .book-input {
+  background-color: var(--bg-main);
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main > .book-input > h2 {
+  margin-top: 0;
 }
 
 main > .book-input > .book-input-details > .input-card {
