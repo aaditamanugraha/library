@@ -54,6 +54,13 @@ main > .book-input > .book-input-details > .input-card {
   margin-bottom: 16px;
 }
 
+main > .book-input > .book-input-details > .input-card > input {
+    border: 1px solid black;
+    height: 24px;
+    border-radius: 4px;
+    padding-left: 8px;
+  }
+
 main > .book-list {
   margin-top: 48px;
   background-color: var(--bg-main);
