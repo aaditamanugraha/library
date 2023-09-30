@@ -60,6 +60,7 @@ main > .book-input > .book-input-details > .input-card > input {
   height: 24px;
   border-radius: 4px;
   padding-left: 8px;
+  font-family: "Poppins", sans-serif;
 }
 
 main > .book-input > .book-input-details > #button {
