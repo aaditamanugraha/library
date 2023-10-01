@@ -16,8 +16,16 @@ function showBookList() {
     const book = myLibrary[i];
 
     // buku container
-    let divElement = document.createElement("div");
-    divElement.classList.add("book-container");
+    let bookDivElement = document.createElement("div");
+    bookDivElement.classList.add("book-container");
+
+    // button container
+    let buttonDivElement = document.createElement("div");
+    buttonDivElement.classList.add("button-container");
+
+    // buku dan button container
+    let libraryCard = document.createElement("div");
+    libraryCard.classList.add("library-card");
 
     // judul buku
     let titleElement = document.createElement("h3");
@@ -39,13 +47,19 @@ function showBookList() {
     };
 
     // menambahkan element yang sudah dibuat ke dalam HTML
-    divElement.appendChild(titleElement);
-    divElement.appendChild(authorElement);
-    divElement.appendChild(pagesElement);
-    divElement.appendChild(deleteBookButton);
+    bookDivElement.appendChild(titleElement);
+    bookDivElement.appendChild(authorElement);
+    bookDivElement.appendChild(pagesElement);
+
+    // menambahkan button ke div button
+    buttonDivElement.appendChild(deleteBookButton);
+
+    // menggabungkan book container dan button container
+    libraryCard.appendChild(bookDivElement);
+    libraryCard.appendChild(buttonDivElement);
 
     // menambahkan book-container ke dalam container
-    containerBookList.appendChild(divElement);
+    containerBookList.appendChild(libraryCard);
   }
 }
 
