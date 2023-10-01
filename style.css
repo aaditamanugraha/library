@@ -10,6 +10,7 @@
   --font-second-second: #920029;
   --font-third: #ff6969;
   --font-shades: #fff5e0;
+  --font-gray: #232323;
 }
 
 body {
@@ -32,6 +33,8 @@ nav > h1 {
 
 nav > p {
   margin: 0;
+  color: var(--font-gray);
+  font-size: 14px;
 }
 
 main {
@@ -112,6 +115,8 @@ main > .book-list > #library > .library-card > .book-container > h3 {
 
 main > .book-list > #library > .library-card > .book-container > p {
   margin: 0;
+  font-size: 14px;
+  color: var(--font-gray);
 }
 
 main
